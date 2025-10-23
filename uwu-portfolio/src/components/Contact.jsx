@@ -30,26 +30,32 @@ const Contact = ({ isDarkMode }) => {
           >
             <h3 className="font-kawaii text-2xl mb-6 text-gray-800">Send me a kind note 💕</h3>
             
-            <form className="space-y-4">
+            <form className="space-y-4" action="https://formspree.io/f/xgvnjgen" method="POST">
               <div>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Your lovely name ✨"
                   className="w-full p-3 rounded-2xl border border-kawaii-pink/30 focus:border-kawaii-pink focus:outline-none font-cute"
+                  required
                 />
               </div>
               <div>
                 <input
                   type="email"
+                  name="email"
                   placeholder="Your email address 📧"
                   className="w-full p-3 rounded-2xl border border-kawaii-pink/30 focus:border-kawaii-pink focus:outline-none font-cute"
+                  required
                 />
               </div>
               <div>
                 <textarea
                   rows="4"
+                  name="message"
                   placeholder="Write me a kind note 💕"
                   className="w-full p-3 rounded-2xl border border-kawaii-pink/30 focus:border-kawaii-pink focus:outline-none font-cute resize-none"
+                  required
                 ></textarea>
               </div>
               <motion.button
