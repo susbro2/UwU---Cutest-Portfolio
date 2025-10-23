@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Analytics } from '@vercel/analytics/next'
+import { inject } from '@vercel/analytics'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -11,6 +11,8 @@ import MusicToggle from './components/MusicToggle'
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false)
+  
+  inject()
 
   return (
     <div className={`min-h-screen transition-all duration-500 ${
@@ -37,7 +39,7 @@ function App() {
       </footer>
       
       <MusicToggle />
-      <Analytics />
+
     </div>
   )
 }
