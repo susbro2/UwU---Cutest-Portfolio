@@ -8,6 +8,7 @@ const Projects = ({ isDarkMode }) => {
       description: "A collaborative digital whiteboard for drawing and note-taking",
       tech: ["JavaScript", "Canvas API", "HTML5"],
       image: "🎨",
+      thumbnail: "/whiteboard-thumb.svg",
       demo: "#",
       github: "https://github.com/susbro2/whiteboard"
     },
@@ -16,6 +17,7 @@ const Projects = ({ isDarkMode }) => {
       description: "AI-powered voice assistant with advanced natural language processing",
       tech: ["Python", "AI/ML", "NLP"],
       image: "🎙️",
+      thumbnail: "/voxen-thumb.svg",
       demo: "https://voxenai.vercel.app/",
       github: "https://github.com/susbro2/voxen.ai"
     },
@@ -24,6 +26,7 @@ const Projects = ({ isDarkMode }) => {
       description: "Free YouTube video downloader with clean interface and fast downloads",
       tech: ["Python", "Flask", "YouTube API"],
       image: "📺",
+      thumbnail: "/freeyt-thumb.svg",
       demo: "#",
       github: "https://github.com/susbro2/freeyt"
     }
@@ -52,7 +55,14 @@ const Projects = ({ isDarkMode }) => {
               whileHover={{ y: -10 }}
               className="kawaii-card group"
             >
-              <div className="text-6xl mb-4 text-center">{project.image}</div>
+              <div className="mb-4 text-center">
+                <img 
+                  src={project.thumbnail} 
+                  alt={project.title}
+                  className="w-full h-32 object-cover rounded-2xl mb-2"
+                />
+                <div className="text-2xl">{project.image}</div>
+              </div>
               
               <h3 className="font-kawaii text-xl mb-3 text-gray-800">{project.title}</h3>
               
@@ -75,7 +85,7 @@ const Projects = ({ isDarkMode }) => {
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   href={project.demo}
-                  className="flex-1 bg-kawaii-pink/80 text-white py-2 px-4 rounded-full text-center font-cute text-sm flex items-center justify-center gap-2 hover:bg-kawaii-pink transition-colors"
+                  className="flex-1 bg-kawaii-pink/80 text-white py-2 px-4 rounded-full text-center font-cute text-sm flex items-center justify-center gap-2 hover:bg-kawaii-pink transition-colors cursor-pointer"
                 >
                   <ExternalLink size={16} />
                   Live Demo
@@ -83,7 +93,7 @@ const Projects = ({ isDarkMode }) => {
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   href={project.github}
-                  className="flex-1 bg-gray-600 text-white py-2 px-4 rounded-full text-center font-cute text-sm flex items-center justify-center gap-2 hover:bg-gray-700 transition-colors"
+                  className="flex-1 bg-gray-600 text-white py-2 px-4 rounded-full text-center font-cute text-sm flex items-center justify-center gap-2 hover:bg-gray-700 transition-colors cursor-pointer"
                 >
                   <Github size={16} />
                   Code

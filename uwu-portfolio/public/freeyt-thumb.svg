@@ -1,0 +1,11 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#ff0000" rx="8"/>
+  <rect x="50" y="50" width="200" height="100" fill="#ffffff" rx="8"/>
+  <polygon points="120,75 120,125 170,100" fill="#ff0000"/>
+  <rect x="80" y="160" width="140" height="4" fill="#cccccc" rx="2"/>
+  <rect x="80" y="160" width="60" height="4" fill="#ff0000" rx="2"/>
+  <circle cx="90" cy="40" r="8" fill="#ffffff" opacity="0.9"/>
+  <circle cx="110" cy="40" r="8" fill="#ffffff" opacity="0.9"/>
+  <circle cx="130" cy="40" r="8" fill="#ffffff" opacity="0.9"/>
+  <text x="150" y="185" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">FreeYT</text>
+</svg>

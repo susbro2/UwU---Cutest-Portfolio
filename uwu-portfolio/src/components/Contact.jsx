@@ -89,6 +89,8 @@ const Contact = ({ isDarkMode }) => {
                 <motion.a
                   key={index}
                   href={link.url}
+                  target={link.label !== "Email" ? "_blank" : undefined}
+                  rel={link.label !== "Email" ? "noopener noreferrer" : undefined}
                   whileHover={{ scale: 1.05, y: -2 }}
                   className={`kawaii-card text-center p-4 transition-colors ${link.color}`}
                 >

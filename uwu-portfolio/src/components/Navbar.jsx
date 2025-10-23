@@ -6,7 +6,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 w-full z-50 p-4"
+      className="fixed top-0 w-full z-50 p-4 bg-white/90 backdrop-blur-sm border-b border-white/20 shadow-sm"
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <motion.div
