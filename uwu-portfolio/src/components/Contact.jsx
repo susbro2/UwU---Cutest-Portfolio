@@ -3,10 +3,10 @@ import { Mail, Github, Linkedin, Youtube, Send } from 'lucide-react'
 
 const Contact = ({ isDarkMode }) => {
   const socialLinks = [
-    { icon: <Github size={24} />, label: "GitHub", url: "#", color: "hover:text-gray-700" },
-    { icon: <Linkedin size={24} />, label: "LinkedIn", url: "#", color: "hover:text-blue-600" },
-    { icon: <Youtube size={24} />, label: "YouTube", url: "#", color: "hover:text-red-500" },
-    { icon: <Mail size={24} />, label: "Email", url: "#", color: "hover:text-kawaii-pink" }
+    { icon: <Github size={24} />, label: "GitHub", url: "https://github.com/susbro2", color: "hover:text-gray-700" },
+    { icon: <Linkedin size={24} />, label: "LinkedIn", url: "https://www.linkedin.com/in/ankur-yadav-03a68622a/", color: "hover:text-blue-600" },
+    { icon: <Youtube size={24} />, label: "YouTube", url: "https://www.youtube.com/@Oopscodex", color: "hover:text-red-500" },
+    { icon: <Mail size={24} />, label: "Email", url: "nexstarteamsace@gmail.com", color: "hover:text-kawaii-pink" }
   ]
 
   return (
