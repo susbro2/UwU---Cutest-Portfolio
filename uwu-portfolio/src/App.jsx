@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { Analytics } from '@vercel/analytics/next'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -36,6 +37,7 @@ function App() {
       </footer>
       
       <MusicToggle />
+      <Analytics />
     </div>
   )
 }
